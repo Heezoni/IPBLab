@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+header {
+  background-color: #F9F9F9;
+  text-align: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 900;
+  padding: 10px 30px;
+  background-color: #070707;
+  cursor: pointer; 
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  padding: 12px 22px 12px 22px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #404040;
+  font-weight: 500;
+  /* margin: 0 20px; */
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #08298A;
+
+  transform: scaleX(1);
+  transition: transform 3s ease-in-out;
+}
+
+.faq a {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #91A4D4 40%);
+}
+
+#main_menu>li {
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+#main_menu>li>a {
+  display: block;
+}
+
+#sub_menu>li {
+  display: block;
+  /* vertical-align: top; */
+  padding: 12px 22px;
+  /* border-bottom: 1px solid rgba(0,0,0,0.15); */
+}
+
+#sub_menu>li:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+#sub_menu {
+  position: absolute;
+  left: 0;
+  margin-top: 12px;
+
+  background: #F2F2F2;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+  transition: all 0.15s ease-in;
+  z-index: 5;
+}
+
+#main_menu>li:hover #sub_menu {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+
+.container {
+  width: 1276px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Title {
+  width: 100%;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  text-align: center;
+  font-size: 32px;
+
+  position: relative;
+}
+
+.button{
+  font-size: 40px;
+  color: #CACACA;
+
+  position: absolute;
+  top: 160px;
+}
+
+.button:hover{
+  color: #0B005C;
+}
+
+.keywords {
+  background-color: #858585;
+  height: 400px;
+  margin-bottom: 124px;
+}
+
+.keycontent {
+  width: 1276px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.key0 {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.keytitle {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  padding-top: 65px;
+  font-weight: 200;
+}
+
+.keytitle h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.key {
+  margin-top: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.key h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-bottom: 15px;
+  text-align: center;
+  gap: 20px;
+
+}
+
+.item {
+  width: 412px;
+  height: 506px;
+  background-color: #DED8D8;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 40px;
+  font-size: 20px;
+}
+
+.item a {
+  margin-top: 60px;
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 40px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  font-size: 20px;
+  float: right;
+}
+
+.item h4 {
+  font-size: 24px;
+  margin-bottom: 36px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item p {
+  text-align: justify;
+}
+
+.item1 {
+  width: 412px;
+  height: 506px;
+  background-color: #5B5B5B;
+  padding: 50px 40px;
+  font-size: 20px;
+}
+
+.item1 a {
+  margin-top: 60px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 40px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  float: right;
+
+}
+
+.item1 h4 {
+  font-size: 24px;
+  margin-bottom: 36px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item1 p {
+  text-align: justify;
+}
+
+#lab_social_icon_footer {
+  justify-content: center;
+  text-align: center;
+  padding: 40px 0;
+  background-color: #000;
+}
+
+#lab_social_icon_footer a {
+  color: #fff;
+}
+
+#lab_social_icon_footer .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+#lab_social_icon_footer .social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+/*
+    Multicoloured Hover Variations
+*/
+
+#lab_social_icon_footer #social-fb:hover {
+  color: #3B5998;
+}
+
+#lab_social_icon_footer #social-tw:hover {
+  color: #4099FF;
+}
+
+#lab_social_icon_footer #social-gp:hover {
+  color: #d34836;
+}
+
+#lab_social_icon_footer #social-em:hover {
+  color: #f39c12;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="introduction.css">
+    
+    <title>Introduction</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://kit.fontawesome.com/b3cc1dcf06.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <header>
+		<div class="logo">IPD lab</div>
+
+		<nav>
+      <ul id="main_menu">
+        <li class="introduction"><a href="introduction.html">introduction</a>
+          <ul id="sub_menu">
+            <!-- <li><a href="#">people</a></li> -->
+            <li class="activities"><a href="Primary Lab Activities.html"> activities</a></li>
+            <li class="identity"><a href="identity.html">identity</a></li>
+            <li class="project"><a href="Project Themes.html">project</a></li>
+            <li class="review"><a href="review.html">review</a></li>
+            <li class="faq"><a href="FAQ.html">FAQ</a></li>
+            <li class="answer"><a href="answer.html">answer & feedback</a></li>
+          </ul>
+        </li>
+        <li class="people"><a href="people.html">people</a>
+          <ul id="sub_menu">
+            <!-- <li><a href="#">people</a></li> -->
+            <li class="photos"><a href="Photos of Us.html">photos</a></li>
+          </ul>
+        </li>
+        <li class="portfolio"><a href="portfolio.html">portfolio</a></li>
+        <li class="publications"><a href="publications.html">publications</a></li>
+        <li class="tip"><a href="Tip.html">teaching</a>
+          <ul id="sub_menu">
+              <!-- <li><a href="#">people</a></li> -->
+              <li class="teaching"><a href="teaching.html"> design tip</a></li>
+              <li class="question"><a href="Professor.html">question</a></li>
+          </ul>
+      </li>
+        <li class="contact"><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+
+	</header>
+
+<section class="conA">
+  <div class="container">
+    <div class="content0">  
+    <div class="title">
+        <h1>Lab Intro</h1>
+        <h2>Interactive<br>Product Design</h2>
+    </div>
+
+    <hr>
+      
+    <div class="content1">  
+        <h5>Design of Future Everyday Interactive Things</h5>
+
+        <h3>IPD Lab researches personal lifelog data, IoT, product design, and tangible
+         interaction. We are exploring techniques and designs for expressing and physically interacting
+        with dematerialized information such as digital schedules, reading activity, and music/audiobook
+         listening data through the form of everyday objects. </h3>
+        <h3>Our lab mainly uses the case design-development+field study method, and the
+            research results are mostly published in academic societies such as ACM CHI & DIS along with
+             HCI-related journals.</h3>
+
+      <button>View More</button>
+    </div>
+    </div>
+    
+  <div class="content2">  
+      <nav class="nav2">
+        <ul>
+          <li><a href="Primary Lab Activities.html">Primary<br>Lab Activities</a></li>
+          <li><a href="Identity.html">Identity</a></li>
+          <li><a href="Project Themes.html">Project<br>Themes</a></li>
+          <li><a href="Review.html">Review</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="answer.html">Answer<br>&<br>Feedback</a></li>
+        </ul>
+      </nav>  
+
+      <div class="box-wrap">
+        <div class="box">
+            <div class="img">
+                <img src="https://i.postimg.cc/fyk3zgWT/krisztian-tabori-Iya-Nci0-Cy-Rk-unsplash.jpg" alt="hover effect">
+                <img src="https://i.postimg.cc/XNrgV4TR/daniele-franchi-8q-DMr83y-E14-unsplash.jpg" alt="hover effect">
+            </div>
+        </div>
+      </div>
+  </div>
+  </div>
+</section>
+
+  <section id="lab_social_icon_footer">
+    <!-- Include Font Awesome Stylesheet in Header -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <div class="container1">
+            <div class="text-center center-block">
+                    <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                    <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                    <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                    <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+        </div>
+    </div>
+    </section>    
+  
+<script>
+    // jQuery 스크립트는 이 곳에 작성
+    $(function(){
+
+    });
+</script>
+</body>
+
+<script>
+  $(".logo").click(function () {
+    location.href = "index.html";
+  });
+
+  $(".box").on({
+  mouseover:function(){
+    $(this).find("img:nth-child(1)").stop().animate({opacity:0},1100);
+    $(this).find("img:nth-child(2)").stop().animate({opacity:1},1100);
+  }, mouseout:function(){
+    $(this).find("img:nth-child(1)").stop().animate({opacity:1},1100);
+    $(this).find("img:nth-child(2)").stop().animate({opacity:0},1100);
+  } 
+});
+
+$(".introduction").hover(function () {
+    $("#sub_menu a").css('background', 'transparent');
+  });
+  
+</script>
+
+</html>

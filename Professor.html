@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teaching</title>
+  <link rel="stylesheet" href="professor.css" type="text/css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo" onclick="index.html">IPD lab</div>
+
+    <nav>
+      <ul id="main_menu">
+        <li class="introduction"><a href="introduction.html">introduction</a>
+          <ul id="sub_menu">
+            <!-- <li><a href="#">people</a></li> -->
+            <li class="activities"><a href="Primary Lab Activities.html"> activities</a></li>
+            <li class="identity"><a href="identity.html">identity</a></li>
+            <li class="project"><a href="Project Themes.html">project</a></li>
+            <li class="review"><a href="review.html">review</a></li>
+            <li class="faq"><a href="FAQ.html">FAQ</a></li>
+            <li class="answer"><a href="answer.html">answer & feedback</a></li>
+          </ul>
+        </li>
+        <li class="people"><a href="people.html">people</a>
+          <ul id="sub_menu">
+            <!-- <li><a href="#">people</a></li> -->
+            <li class="photos"><a href="Photos of Us.html">photos</a></li>
+          </ul>
+        </li>
+        <li class="portfolio"><a href="portfolio.html">portfolio</a></li>
+        <li class="publications"><a href="publications.html">publications</a></li>
+        <li class="tip"><a href="Tip.html">teaching</a>
+          <ul id="sub_menu">
+            <!-- <li><a href="#">people</a></li> -->
+            <li class="teaching"><a href="teaching.html"> design tip</a></li>
+            <li class="question"><a href="Professor.html">question</a></li>
+          </ul>
+        </li>
+        <li class="contact"><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+
+  <div class="container">
+    <div class="info">
+      <h1>young woo Park</h1>
+      <h2>UNIST Associate Professor</h2>
+      <div class="in">
+        <h3>참여 프로젝트</h3>
+        <p>80개</p>
+      </div>
+      <div class="in">
+        <h3>작성 글</h3>
+        <p>100개</p>
+        <img src="https://i.postimg.cc/y6rwMFM2/image.png">
+      </div>
+
+      <div class="innernav">
+        <ul>
+          <li><a href="introduction.html">소개</a></li>
+          <li><a href="people.html">작성글 100개</a></li>
+          <li><a href="portfolio.html">프로젝트 80개</a></li>
+          <div class="line">.</div>
+        </ul>
+      </div>
+
+      <div class="info2">
+        <h4>소개</h4>
+        <p>Welcome to the Interactive Product Design Lab. IPD Lab. is a research lab affiliated to the Department of
+          Design at UNIST. Our lab’s primary activity is to design and realize future interactive products through
+          investigating aesthetic form & materials, along with the design of novel interactions. Our research converges
+          product design, physical computing, and programming knowledge & skills in order to develop new interactive
+          products for better user experience. </p>
+      </div>
+
+      <div class="hash">
+        <div class="hh">
+          <h5>Interactive product desgin</h5>
+        </div>
+        <div class="hh">
+          <h5>Professor</h5>
+        </div>
+      </div>
+
+      <div class="info3">
+        <h4>Message</h4>
+      </div>
+
+      <div class="moon">
+        <div class="container2">
+          <form id="contact" action="" method="post">
+            <fieldset>
+              <input placeholder="Message" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send</button>
+            </fieldset>
+          </form>
+        </div>
+
+      </div>
+
+
+
+</body>
+
+<script>
+  $(function () {
+
+    var $el, leftPos, newWidth,
+      $mainNav = $("#example-one");
+
+    $mainNav.append("<li id='magic-line'></li>");
+    var $magicLine = $("#magic-line");
+
+    $magicLine
+      .width($(".current_page_item").width())
+      .css("left", $(".current_page_item a").position().left)
+      .data("origLeft", $magicLine.position().left)
+      .data("origWidth", $magicLine.width());
+
+    $("#example-one li a").hover(function () {
+      $el = $(this);
+      leftPos = $el.position().left;
+      newWidth = $el.parent().width();
+      $magicLine.stop().animate({
+        left: leftPos,
+        width: newWidth
+      });
+    }, function () {
+      $magicLine.stop().animate({
+        left: $magicLine.data("origLeft"),
+        width: $magicLine.data("origWidth")
+      });
+    });
+  });
+
+  $(function () {
+    $(".logo").click(function () {
+      location.href = "index.html";
+    });
+  });
+
+</script>
+
+</html>
